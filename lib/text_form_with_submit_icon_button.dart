@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 
 final GlobalKey<FormFieldState> _formKey = GlobalKey<FormFieldState>();
 
-class TextFormWithIconSubmit extends StatelessWidget {
+class TextFormWithSubmitIconButton extends StatelessWidget {
   final Function(String) onSubmit;
   final InputDecoration decoration;
   final String? Function(String?)? validator;
   final IconData submitIcon;
   final String? initialValue;
-  TextFormWithIconSubmit({
+  TextFormWithSubmitIconButton({
     super.key,
     required this.onSubmit,
     required this.decoration,
